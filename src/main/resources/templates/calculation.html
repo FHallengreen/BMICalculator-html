@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculation</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" href="/static/css/style.css">
+</head>
+<body>
+<div class="grid-container">
+    <video autoplay muted loop id="myVideo">
+        <source th:src="@{videos/Shameful.mp4}" src="../static/videos/Shameful.mp4" type="video/mp4">
+    </video>
+<div class="grid-item">
+<h1 style="font-weight: bold">BMI Calculation:</h1>
+<div>Weight <span th:text="${userweight}">weight</span> kg</div>
+<div>Height <span th:text="${userheight}">height</span> cm</div>
+<div>BMI: <span th:text="${result}"></span></div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculate your BMI</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" href="/static/css/style.css">
+</head>
+<body>
+<video autoplay muted loop id="myVideo">
+    <source th:src="@{videos/Shameful.mp4}" src="/static/videos/Shameful.mp4" type="video/mp4">
+</video>
+<div class="grid-container">
+
+    <div class="grid-item">
+        <div><h1>Welcome to my BMI calculator</h1></div>
+    <form action="/calculate" method="post">
+    <label for="weight">Weight (KG): </label>
+    <input id="weight" name="userweight" placeholder="Insert your weight" autofocus>
+    <br>
+    <label for="weight">Height (CM): </label>
+    <input id="height" name="userheight" placeholder="Insert your height">
+    <br>
+    <button type="submit">Calculate BMI</button>
+    </form>
+    </div>
+</div>
+
+</body>
+</html>
